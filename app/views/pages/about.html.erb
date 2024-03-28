@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .redes a {
+        color: #fff;
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <%= link_to "Pagina de Pupi", root_path, class: "navbar-brand" %>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <%= link_to "home", home_path, class: "nav-item nav-link" %>
+                    <%= link_to "about", about_path, class: "nav-item nav-link" %>
+                    <%= link_to "contact", contact_path, class: "nav-item nav-link" %>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Acerca de Nosotros</h1>
+                <h2 class="mt-4">Nuestra Historia</h2>
+                <p>Pensar en una historia estaba complicado</p>
+                <h2 class="mt-4">Nuestro Equipo</h2>
+                <p>Watones Esports</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Puppet. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-end redes">
+                    <a href="#" class="text-decoration-none"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); 
+            document.getElementById('Mensaje').classList.remove('d-none');
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
